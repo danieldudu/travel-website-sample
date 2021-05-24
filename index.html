@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/style.css" />
+		<title>Travel Landing Page</title>
+	</head>
+	<body>
+		<!-- The main video overlay with text -->
+
+		<section class="showcase">
+			<header>
+				<div class="logo">Travel</div>
+				<div class="toggle"></div>
+			</header>
+
+			<video src="/video/video.mp4" loop muted autoplay></video>
+
+			<div class="overlay"></div>
+
+			<div class="text">
+				<h2>Let's Explore</h2>
+				<h3>The World Wonders</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+					doloremque totam repellat magnam corporis ad vel necessitatibus
+					facere, dolores ex possimus enim dignissimos id saepe?
+				</p>
+				<a href="#">Travel Now</a>
+			</div>
+
+			<ul class="social">
+				<li>
+					<a href="#">
+						<img
+							class="social-media-icon"
+							src="/img/facebook.png"
+							alt="facebook icon"
+					/></a>
+				</li>
+				<li>
+					<a href="#">
+						<img
+							class="social-media-icon"
+							src="/img/twitter.png"
+							alt="twitter icon"
+					/></a>
+				</li>
+				<li>
+					<a href="#">
+						<img
+							class="social-media-icon"
+							src="/img/youtube.png"
+							alt="youtube icon"
+					/></a>
+				</li>
+				<li>
+					<a href="#">
+						<img
+							class="social-media-icon"
+							src="/img/instagram.png"
+							alt="instagram icon"
+					/></a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Menu -->
+
+		<menu class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Destination</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</menu>
+
+		<script>
+			const menuToggle = document.querySelector(".toggle");
+			const showcase = document.querySelector(".showcase");
+
+			menuToggle.addEventListener("click", () => {
+				menuToggle.classList.toggle("active");
+				showcase.classList.toggle("active");
+			});
+		</script>
+	</body>
+</html>
